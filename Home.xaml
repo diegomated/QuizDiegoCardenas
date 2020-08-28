@@ -10,12 +10,26 @@
 
     <Grid Background="#FF4AF465">
         <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="567,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="295" Width="217" Background="White"/>
-        <TextBox Name="txtProductname" HorizontalAlignment="Left" Height="23" Margin="150,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Product Name" HorizontalAlignment="Left" Margin="51,63,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="183,228,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
-        <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="168,115,0,0" VerticalAlignment="Top"/>
-        <RadioButton GroupName="category" Content="Electronics" HorizontalAlignment="Left" Margin="168,135,0,0" VerticalAlignment="Top"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="80,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.547,0.596"/>
+        <TextBox Name="txtProductname" HorizontalAlignment="Left" Height="23" Margin="109,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Client" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="51,286,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <RadioButton GroupName="category" Content="Kfc" HorizontalAlignment="Left" Margin="110,81,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="category" Content="Magdonalds" HorizontalAlignment="Left" Margin="110,101,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Label Content="Company" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,0.199"/>
+        <Label Name="lblCategoty" Content="" HorizontalAlignment="Left" Margin="80,135,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Slider Name="sldCantidad" HorizontalAlignment="Left" Margin="107,140,0,0" VerticalAlignment="Top" Width="120" ValueChanged="sldCantidad_ValueChanged" SmallChange="0" Interval="1"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="8,135,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbJugo" Content="Juice" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblCantidad" Content="1" HorizontalAlignment="Left" Margin="232,135,0,0" VerticalAlignment="Top" Width="38"/>
+        <CheckBox Name="cbPapas" Content="Chips" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Product" HorizontalAlignment="Left" Margin="8,41,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cmbProductos" HorizontalAlignment="Left" Margin="109,44,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Hamburguesa" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="Perro" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="Salchipapa" HorizontalAlignment="Left" Width="118.4"/>
+            <ComboBoxItem Content="Empanada" HorizontalAlignment="Left" Width="118.4"/>
+        </ComboBox>
+        <Label Name="pruba" Content="Label" HorizontalAlignment="Left" Margin="304,215,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

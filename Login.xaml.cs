@@ -27,7 +27,7 @@ namespace WpfApp2
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text == "diegomated" && txtPassword.Password == "autofarm123")
+            if (txtUsername.Text == "diegomated" && txtPassword.Password == "123")
             {
                 MainWindow w = (MainWindow)Window.GetWindow(this);
                 w.mainFrame.NavigationService.Navigate(new Home());

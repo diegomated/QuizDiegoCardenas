@@ -27,8 +27,37 @@ namespace WpfApp2
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            string productName = txtProductname.Text;
-            txtResults.Text = productName;
+            string clientName = txtProductname.Text;
+            string category = lblCategoty.Content.ToString();
+            string cantidadProd = lblCantidad.Content.ToString();
+            string productoName = cmbProductos.Text;
+
+            txtResults.Text = clientName + "\n" + category + "\n" + "x" + cantidadProd + " " + productoName;
+
+            if (cbJugo.IsChecked == true)
+            {
+                txtResults.Text =txtResults.Text + "\n" + cbJugo.Content;
+            }
+            if (cbPapas.IsChecked == true)
+            {
+                txtResults.Text =txtResults.Text+"\n"+cbPapas.Content;
+            }
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.IsChecked.Value)
+            {
+                lblCategoty.Content = rb.Content.ToString();
+            }
+        }
+
+        private void sldCantidad_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            double cantidad = Math.Truncate(sldCantidad.Value);
+            lblCantidad.Content = cantidad.ToString();
         }
     }
 }
