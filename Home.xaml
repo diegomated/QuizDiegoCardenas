@@ -13,8 +13,8 @@
         <TextBox Name="txtProductname" HorizontalAlignment="Left" Height="23" Margin="109,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Client" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="51,286,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
-        <RadioButton GroupName="category" Content="Kfc" HorizontalAlignment="Left" Margin="110,81,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton GroupName="category" Content="Magdonalds" HorizontalAlignment="Left" Margin="110,101,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Name="btn1" GroupName="category" Content="Kfc" HorizontalAlignment="Left" Margin="110,81,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Name="btn2" GroupName="category" Content="Magdonalds" HorizontalAlignment="Left" Margin="110,101,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <Label Content="Company" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,0.199"/>
         <Label Name="lblCategoty" Content="" HorizontalAlignment="Left" Margin="80,135,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Slider Name="sldCantidad" HorizontalAlignment="Left" Margin="107,140,0,0" VerticalAlignment="Top" Width="120" ValueChanged="sldCantidad_ValueChanged" SmallChange="0" Interval="1"/>
@@ -29,7 +29,7 @@
             <ComboBoxItem Content="Salchipapa" HorizontalAlignment="Left" Width="118.4"/>
             <ComboBoxItem Content="Empanada" HorizontalAlignment="Left" Width="118.4"/>
         </ComboBox>
-        <Label Name="pruba" Content="Label" HorizontalAlignment="Left" Margin="304,215,0,0" VerticalAlignment="Top"/>
+        <Label Name="prueba" Content="" HorizontalAlignment="Left" Margin="304,215,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
     </Grid>
 </Page>

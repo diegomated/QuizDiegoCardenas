@@ -23,6 +23,7 @@ namespace WpfApp2
         public Home()
         {
             InitializeComponent();
+            
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
@@ -31,8 +32,9 @@ namespace WpfApp2
             string category = lblCategoty.Content.ToString();
             string cantidadProd = lblCantidad.Content.ToString();
             string productoName = cmbProductos.Text;
+            string mercado = prueba.Content.ToString();
 
-            txtResults.Text = clientName + "\n" + category + "\n" + "x" + cantidadProd + " " + productoName;
+            txtResults.Text = mercado+"\n"+clientName + "\n" + category + "\n" + "x" + cantidadProd + " " + productoName;
 
             if (cbJugo.IsChecked == true)
             {
@@ -42,7 +44,8 @@ namespace WpfApp2
             {
                 txtResults.Text =txtResults.Text+"\n"+cbPapas.Content;
             }
-
+            prueba.Content = txtResults.Text+"\n";
+            
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
