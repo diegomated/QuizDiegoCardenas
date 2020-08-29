@@ -30,6 +30,7 @@
             <ComboBoxItem Content="Empanada" HorizontalAlignment="Left" Width="118.4"/>
         </ComboBox>
         <Label Name="prueba" Content="" HorizontalAlignment="Left" Margin="304,215,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button Name="btnLogout" Content="Log out" HorizontalAlignment="Left" Margin="476,286,0,0" VerticalAlignment="Top" Width="75" Click="btnLogout_Click"/>
 
     </Grid>
 </Page>

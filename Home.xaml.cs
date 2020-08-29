@@ -62,5 +62,11 @@ namespace WpfApp2
             double cantidad = Math.Truncate(sldCantidad.Value);
             lblCantidad.Content = cantidad.ToString();
         }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.mainFrame.NavigationService.Navigate(new Login());
+        }
     }
 }
